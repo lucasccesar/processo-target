@@ -1,13 +1,12 @@
 import java.util.Scanner;
-import java.util.Random;
 
 public class Main{
 
     public static void main(String[] args){
-        /* questao1();
+        questao1();
         questao2();
         questao3();
-        questao4(); */
+        questao4();
         questao5();
     }
 
@@ -173,6 +172,8 @@ public class Main{
     }
 
     public static void questao5(){
+
+        System.out.println("Questão 5");
 
         // 1) liga o primeiro interruptor por tempo suficiente até a lâmpada esquentar
         // 2) desliga o primeiro interruptor, liga o segundo e vai até a primeira sala

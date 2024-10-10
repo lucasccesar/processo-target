@@ -1,12 +1,14 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main{
 
     public static void main(String[] args){
-        questao1();
+        /* questao1();
         questao2();
         questao3();
-        questao4();
+        questao4(); */
+        questao5();
     }
 
     public static void questao1(){ // Primeira Questão
@@ -168,5 +170,18 @@ public class Main{
         System.out.println("\nletra E");
         System.out.println(200);
 
+    }
+
+    public static void questao5(){
+
+        // 1) liga o primeiro interruptor por tempo suficiente até a lâmpada esquentar
+        // 2) desliga o primeiro interruptor, liga o segundo e vai até a primeira sala
+        // 3) se a lampada estiver acesa, o segundo interruptor acende a lampada da primeira sala.
+        // se estiver apagada mas quente, então o primeiro interruptor acende a lampada da primeira sala.
+        // se não estiver nem acesa e nem quente, então o terceiro interruptor acende a lâmpada da primeira sala
+        // 4) sabendo qual interruptor acende a luz da primeira sala, desliga o interruptor que estava ligado, e liga um interruptor diferente do que acende a primeira sala
+        // 5) vai até a segunda sala, se a lâmpada estiver acesa é o interruptor que está ligado que acende a lâmpada da segunda sala 
+        // e o interruptor que sobrou acende a luz da terceira sala.
+        // se não estiver acesa, é o interruptor que sobrou que acende a lampada da segunda sala e o que está ligado acende a lâmpada da terceira sala
     }
 }

@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Main{
 
     public static void main(String[] args){
-        questao1();
+        /* questao1(); */
+        questao2();
     }
 
     public static void questao1(){ // Primeira Questão
@@ -30,8 +31,44 @@ public class Main{
             System.out.println("Número pertence a sequencia de fibonacci");
 
         } else{
-            
+
             System.out.println("Número não pertence a sequencia de fibonacci");
+
+        }
+
+        scan.close();
+
+    }
+
+    public static void questao2(){ // Segunda Questão
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite uma frase:");
+        String text = scan.nextLine();
+
+        text = text.toLowerCase();
+
+
+        int count = 0;
+
+        for (int i = 0; i < text.length(); i++) {
+
+            if (text.charAt(i) == 'a') {
+
+                count++;
+
+            }
+
+        }
+
+        if (count > 0) {
+
+            System.out.printf("O texto tem %d letras A", count);
+
+        } else {
+
+            System.out.println("O texto não tem letra A");
 
         }
 
